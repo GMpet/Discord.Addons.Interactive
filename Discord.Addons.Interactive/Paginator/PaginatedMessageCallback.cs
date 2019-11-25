@@ -10,7 +10,7 @@ namespace Discord.Addons.Interactive
     {
         public SocketCommandContext Context { get; }
         public InteractiveService Interactive { get; private set; }
-        public IUserMessage Message { get; private set; }
+        public IMessage Message { get; private set; }
 
         public RunMode RunMode => RunMode.Sync;
         public ICriterion<SocketReaction> Criterion => _criterion;
